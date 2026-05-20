@@ -10,11 +10,14 @@
 - OpenAI API 호출 구조
 - 응답 파싱
 - 에러 처리와 로그
+- LLM Theory Lite: token, context window, next-token prediction
 
 완료 산출물:
 
 - `notes/api_llm_calls.md`
+- `notes/llm_theory_lite.md`
 - `exercises/day4_api_response_parsing.md`
+- `exercises/day4_llm_theory_lite_api.md`
 
 공식 문서 확인:
 
@@ -30,11 +33,13 @@
 - structured output
 - JSON output 검증
 - 실패 사례 비교
+- LLM Theory Lite: sampling, temperature, hallucination, grounding
 
 완료 산출물:
 
 - `notes/prompt_structured_output.md`
 - `exercises/day5_prompt_eval_practice.md`
+- `exercises/day5_llm_theory_lite_generation.md`
 
 공식 문서 확인:
 
@@ -49,11 +54,13 @@
 - vector database
 - retrieval 결과 확인
 - generation과 retrieval 분리 디버깅
+- LLM Theory Lite: embedding, similarity search, hallucination, grounding
 
 완료 산출물:
 
 - `notes/embedding_rag.md`
 - `exercises/day6_rag_retrieval_practice.md`
+- `exercises/day6_llm_theory_lite_embedding_rag.md`
 
 공식 문서 확인:
 
@@ -69,10 +76,12 @@
 - 로그 저장
 - 간단 평가표 작성
 - Gradio 또는 CLI 인터페이스
+- LLM Theory Lite: evaluation, pretraining/fine-tuning/RLHF 개요, agent loop
 
 완료 산출물:
 
 - `projects/faq_qa_mini_project.md`
+- `exercises/day7_llm_theory_lite_eval_agent.md`
 - `../../05_outputs/projects/week1_llm_project_review.md`
 
 공식 문서 확인:
@@ -87,3 +96,4 @@
 3. 출력은 무엇인가?
 4. 실패한다면 검색, prompt, 모델 생성, UI 중 어디가 원인인가?
 5. 공식 문서 기준으로 확인해야 할 API 동작은 무엇인가?
+6. 이 실습과 연결되는 LLM Theory Lite 개념은 무엇인가?

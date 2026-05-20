@@ -6,7 +6,7 @@
 
 ## 전체 목표
 
-7일 동안 Python 기초에서 시작해 LLM API, JSON, 문서 처리, RAG, 간단한 FAQ 기반 QA 프로젝트까지 연결한다.
+7일 동안 Python 기초에서 시작해 LLM API, JSON, 문서 처리, RAG, 간단한 FAQ 기반 QA 프로젝트까지 연결한다. LLM 내부 이론은 별도 장기 과정으로 깊게 다루지 않고, Day 4~7에 필요한 최소 이론을 `LLM Theory Lite` 보조 트랙으로 함께 학습한다.
 
 목표는 모델을 직접 학습시키는 것이 아니라 다음 네 가지다.
 
@@ -14,6 +14,7 @@
 2. LLM API 요청과 응답을 JSON 구조로 이해한다.
 3. RAG를 검색과 생성 단계로 나누어 디버깅할 수 있게 한다.
 4. AI가 만든 코드도 입력, 처리, 출력, 실패 가능성 기준으로 검토할 수 있게 한다.
+5. token, context window, next-token prediction, embedding, hallucination, evaluation 같은 최소 이론을 활용 판단과 연결한다.
 
 ## 7일 커리큘럼
 
@@ -22,10 +23,30 @@
 | 1 | Python Core | 변수, 조건문, 반복문, list, dict, indexing/slicing, function, class 노트 | 소크라테스 문답, 능동적 회상 |
 | 2 | Python 실전 도구 | import, venv, pip, pathlib, 파일 입출력, JSON, string 처리, try/except 실습 | 출력 예측, 디버깅 격리 |
 | 3 | 데이터 다루기 | CSV 읽기, Pandas 필터링, 결측치, groupby 실습 | 단계별 출력 추적 |
-| 4 | API와 LLM 호출 | 환경변수, request/response, OpenAI API 기본 호출 구조 노트 | 문서 기반 실습, 역공학 |
-| 5 | Prompt와 구조화 출력 | system/user 메시지, JSON output, prompt versioning, 실패 사례 비교 | 능동적 회상, 비교 실습 |
-| 6 | Embedding과 RAG | chunking, embedding, vector search, retrieval 결과 확인 실습 | 역공학, 검색 결과 평가 |
-| 7 | 미니 LLM 프로젝트 | FAQ 문서 기반 QA, 간단 UI 또는 CLI, 로그, 평가표 | 프로젝트 기반 학습, 코드 리뷰 |
+| 4 | API와 LLM 호출 | 환경변수, request/response, OpenAI API 기본 호출 구조, token/context window 노트 | 문서 기반 실습, 역공학 |
+| 5 | Prompt와 구조화 출력 | system/user 메시지, JSON output, prompt versioning, temperature/hallucination 비교 | 능동적 회상, 비교 실습 |
+| 6 | Embedding과 RAG | chunking, embedding, vector search, retrieval 결과 확인, grounding 실습 | 역공학, 검색 결과 평가 |
+| 7 | 미니 LLM 프로젝트 | FAQ 문서 기반 QA, 간단 UI 또는 CLI, 로그, 평가표, agent loop 개요 | 프로젝트 기반 학습, 코드 리뷰 |
+
+## LLM Theory Lite 보조 트랙
+
+LLM 이론은 수식과 모델 학습 구현을 목표로 하지 않는다. 현재 목표는 LLM 활용 과정에서 판단력을 주는 최소 개념을 익히는 것이다.
+
+| 연결 Day | 이론 개념 | 필요한 이유 |
+| --- | --- | --- |
+| Day 4 | token, context window, next-token prediction | API 비용, 입력 길이, 모델 생성 방식 이해 |
+| Day 5 | sampling, temperature, hallucination, structured output | 출력 안정성, 근거 없는 답변, JSON 검증 이해 |
+| Day 6 | embedding, similarity search, grounding | RAG 검색과 답변 근거 확인 이해 |
+| Day 7 | evaluation, pretraining/fine-tuning/RLHF 개요, agent loop | 평가표, 모델 한계, agent 검증 루프 이해 |
+
+완료 산출물:
+
+- `03_subjects/llm/notes/llm_theory_lite.md`
+- `03_subjects/llm/exercises/day4_llm_theory_lite_api.md`
+- `03_subjects/llm/exercises/day5_llm_theory_lite_generation.md`
+- `03_subjects/llm/exercises/day6_llm_theory_lite_embedding_rag.md`
+- `03_subjects/llm/exercises/day7_llm_theory_lite_eval_agent.md`
+- `01_learning_plan/llm_theory_lite_coverage_check.md`
 
 ## PyTorch의 위치
 
@@ -37,8 +58,11 @@ LLM 활용 과정에서 먼저 필요한 것은 다음이다.
 - indexing/slicing과 nested data 접근
 - 파일과 JSON 처리
 - API 호출과 응답 파싱
+- token과 context window
+- next-token prediction과 hallucination
 - 문서 chunking
 - embedding과 vector search
+- grounding과 evaluation
 - RAG 평가
 - LangChain/LangGraph 코드의 입력과 출력 추적
 

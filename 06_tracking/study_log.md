@@ -28,4 +28,5 @@
 - 신뢰성 규칙 추가: API, 라이브러리, 보안, 평가 지표, 최신 모델처럼 정확도가 중요한 주제는 공식 문서를 우선 확인하도록 운영 규칙과 라우터에 반영함.
 - 세부 실습 재점검: 기존 Day 2~7의 NumPy/sklearn/PyTorch 중심 실습 파일을 제거하고, Python 실전 도구, Pandas 평가 데이터, API 응답 파싱, prompt 평가, RAG retrieval 점검, FAQ QA 미니 프로젝트 실습으로 교체함.
 - 커리큘럼 보강: Day 1은 완료 상태로 유지하되, Day 2 시작 전 보충으로 indexing/slicing, string preview, nested data 접근, enumerate를 추가함. 이후 Day 2에는 f-string, `dict.get`, nested JSON 접근을 보강하고, Day 3에는 list/dict comprehension, Day 6에는 slicing과 `range` 기반 chunking 감각을 연결함.
+- LLM 이론 보강: 기존 계획은 활용 실습 중심이라 LLM 자체 원리 학습이 약했음. Day 4~7에 `LLM Theory Lite` 보조 트랙을 추가해 token, context window, next-token prediction, temperature, hallucination, embedding, similarity search, grounding, evaluation, agent loop를 실습과 연결하도록 함.
 - 다음 행동: Day 2 시작 전 Day 1 복습 3문제와 Day 1 보충 4문제

@@ -7,9 +7,13 @@
 | Python practical tools | not_started |  |
 | Pandas data handling | not_started |  |
 | API and LLM calls | not_started |  |
+| LLM Theory Lite - API | not_started | `03_subjects/llm/exercises/day4_llm_theory_lite_api.md` |
 | Prompt and structured output | not_started |  |
+| LLM Theory Lite - Generation | not_started | `03_subjects/llm/exercises/day5_llm_theory_lite_generation.md` |
 | Embedding and RAG | not_started |  |
+| LLM Theory Lite - RAG | not_started | `03_subjects/llm/exercises/day6_llm_theory_lite_embedding_rag.md` |
 | Mini LLM project | not_started |  |
+| LLM Theory Lite - Eval/Agent | not_started | `03_subjects/llm/exercises/day7_llm_theory_lite_eval_agent.md` |
 
 ## 현재 우선순위
 
@@ -17,6 +21,7 @@
 2. Day 1 보충: indexing/slicing, string preview, nested data 접근
 3. Python 실전 도구: import, venv, pip, pathlib, 파일 입출력, JSON, try/except
 4. LLM 활용 과정 대비: API 호출, 구조화 출력, RAG 기초로 연결
+5. Day 4부터 LLM Theory Lite를 실습 전 10~20분씩 연결
 
 ## 보류된 보충 주제
 

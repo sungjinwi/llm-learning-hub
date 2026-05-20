@@ -11,9 +11,13 @@
 | 2 | Python practical tools | `day2_python_practical_tools.md` |
 | 3 | Pandas data handling | `day3_pandas_data_handling.md` |
 | 4 | API and LLM calls | `../../llm/exercises/day4_api_response_parsing.md` |
+| 4 보충 | LLM theory lite: token, context window, next-token prediction | `../../llm/exercises/day4_llm_theory_lite_api.md` |
 | 5 | Prompt and structured output | `../../llm/exercises/day5_prompt_eval_practice.md` |
+| 5 보충 | LLM theory lite: temperature, hallucination, grounding | `../../llm/exercises/day5_llm_theory_lite_generation.md` |
 | 6 | Embedding and RAG | `../../llm/exercises/day6_rag_retrieval_practice.md` |
+| 6 보충 | LLM theory lite: embedding, similarity search, RAG failure | `../../llm/exercises/day6_llm_theory_lite_embedding_rag.md` |
 | 7 | Mini LLM project | `../../llm/projects/faq_qa_mini_project.md` |
+| 7 보충 | LLM theory lite: eval, model training overview, agent loop | `../../llm/exercises/day7_llm_theory_lite_eval_agent.md` |
 
 ## 보류된 보충 실습
 
@@ -34,6 +38,18 @@
 - `dict.get`: optional field와 누락 key 처리
 - list/dict comprehension: 평가 로그와 문서 목록 가공
 - `range`, `enumerate`: chunk 번호, 검색 결과 순위, 반복 디버깅
+
+## LLM Theory Lite 연결 개념
+
+아래 항목은 별도 긴 이론 강의보다 Day 4~7 실습 앞뒤에 짧게 확인한다.
+
+- token/context window: API 비용, 긴 문서 처리, RAG 필요성
+- next-token prediction: LLM이 정답 조회기가 아니라 생성 모델이라는 감각
+- temperature/sampling: 출력 안정성과 다양성
+- hallucination/grounding: 근거 없는 답변과 문서 기반 답변의 차이
+- embedding/similarity search: RAG 검색의 기본 원리
+- evaluation: prompt, RAG, model 변경을 기준으로 비교하는 방법
+- agent loop: context gathering, action, verification, retry/report
 
 ## 사용 규칙
 

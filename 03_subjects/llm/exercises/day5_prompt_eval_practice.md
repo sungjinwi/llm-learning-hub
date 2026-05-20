@@ -11,6 +11,17 @@
 
 정확한 structured output 사용법은 학습 당일 공식 문서로 확인한다.
 
+이론 연결:
+
+- temperature: 출력 안정성과 다양성의 trade-off
+- hallucination: 근거 없는 답변이 자연스럽게 생성될 수 있는 이유
+- grounding: 답변을 문서나 근거에 묶는 방식
+- structured output: 자동 검증과 eval을 쉽게 만드는 출력 형식
+
+관련 보충 실습:
+
+- `day5_llm_theory_lite_generation.md`
+
 ## 실습 1 - prompt 버전 비교
 
 같은 질문에 대해 두 prompt의 차이를 설명한다.
@@ -76,4 +87,5 @@ print(parsed["confidence"])
 
 - prompt 버전을 비교할 기준을 말할 수 있다.
 - structured output이 필요한 이유를 설명할 수 있다.
+- temperature, hallucination, grounding을 prompt 평가와 연결해 설명할 수 있다.
 - LLM 답변 평가 기준을 최소 3개 만들 수 있다.

@@ -11,6 +11,16 @@
 
 처음부터 LangChain 전체 코드를 붙이지 않는다. 먼저 Python 함수 수준에서 입력, 처리, 출력을 검증한 뒤 API/RAG/UI를 붙인다.
 
+이론 연결:
+
+- evaluation: 답변 품질을 감이 아니라 기준으로 판단한다.
+- pretraining/fine-tuning/RLHF 개요: 모델이 무엇을 알고 무엇을 모를 수 있는지 이해한다.
+- agent loop: context gathering, action, verification 흐름으로 프로젝트를 점검한다.
+
+관련 보충 실습:
+
+- `../exercises/day7_llm_theory_lite_eval_agent.md`
+
 ## 프로젝트 템플릿
 
 ```md
@@ -35,6 +45,14 @@ FAQ 문서 예시:
 - OpenAI API:
 - LangChain:
 - Gradio:
+
+LLM Theory Lite 확인:
+
+- token/context window:
+- embedding/similarity search:
+- hallucination/grounding:
+- evaluation:
+- agent loop:
 
 1단계 문서 로딩:
 2단계 chunking:
@@ -70,6 +88,7 @@ FAQ 문서 예시:
 
 - 전체 흐름을 입력, 처리, 출력으로 설명할 수 있다.
 - 검색 실패와 생성 실패를 구분할 수 있다.
+- evaluation 기준과 agent loop 관점으로 프로젝트를 설명할 수 있다.
 - API key를 코드에 직접 쓰지 않는다.
 - 최소 3개 질문에 대해 평가표를 작성한다.
 - AI가 만든 코드라도 주요 변수와 데이터 구조를 설명할 수 있다.

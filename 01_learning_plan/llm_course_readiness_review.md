@@ -128,6 +128,8 @@ PyTorch Tensor와 Training Loop는 중요하지만, 이 과정의 직접 선행 
 ## 꼭 추가할 LLM 개념
 
 - token과 context window
+- next-token prediction
+- sampling과 temperature
 - prompt, system message, user message
 - temperature와 출력 안정성
 - structured output
@@ -140,6 +142,33 @@ PyTorch Tensor와 Training Loop는 중요하지만, 이 과정의 직접 선행 
 - API 비용, latency, rate limit
 - API key 보안
 - 로그와 재현 가능성
+
+## 2026-05-20 LLM Theory Lite 반영
+
+LLM 이론은 별도 장기 과정으로 분리하지 않고 Day 4~7의 보조 트랙으로 추가했다.
+
+반영한 이유:
+
+- LLM 활용 과정에서도 token, context window, hallucination, embedding, evaluation을 모르면 API/RAG/prompt 품질을 표면적으로만 이해하게 된다.
+- 반대로 transformer 수식, training loop, PyTorch 내부 구현까지 단기간에 깊게 들어가면 현재 과정 대비 효율이 낮다.
+- 따라서 필요한 이론을 실습 직전에 10~20분씩 연결하는 방식이 적합하다.
+
+반영 파일:
+
+- `03_subjects/llm/notes/llm_theory_lite.md`
+- `03_subjects/llm/exercises/day4_llm_theory_lite_api.md`
+- `03_subjects/llm/exercises/day5_llm_theory_lite_generation.md`
+- `03_subjects/llm/exercises/day6_llm_theory_lite_embedding_rag.md`
+- `03_subjects/llm/exercises/day7_llm_theory_lite_eval_agent.md`
+- `01_learning_plan/llm_theory_lite_coverage_check.md`
+
+누락 방지 체크:
+
+- API 사용 판단: token, context window, next-token prediction
+- Prompt 평가: temperature, hallucination, grounding, structured output
+- RAG 이해: embedding, similarity search, retrieval/generation 분리
+- 프로젝트 검증: evaluation, 모델 학습 방식 개요, agent loop
+- 장기 보류: transformer 세부 수식, PyTorch training loop, 모델 직접 fine-tuning 구현
 
 ## 학습 운영 권장
 
