@@ -19,8 +19,8 @@
 
 | Day | 주제 | 핵심 산출물 | 기본 학습법 |
 | --- | --- | --- | --- |
-| 1 | Python Core | 변수, 조건문, 반복문, list, dict, function, class 노트 | 소크라테스 문답, 능동적 회상 |
-| 2 | Python 실전 도구 | import, venv, pip, pathlib, 파일 입출력, JSON, try/except 실습 | 출력 예측, 디버깅 격리 |
+| 1 | Python Core | 변수, 조건문, 반복문, list, dict, indexing/slicing, function, class 노트 | 소크라테스 문답, 능동적 회상 |
+| 2 | Python 실전 도구 | import, venv, pip, pathlib, 파일 입출력, JSON, string 처리, try/except 실습 | 출력 예측, 디버깅 격리 |
 | 3 | 데이터 다루기 | CSV 읽기, Pandas 필터링, 결측치, groupby 실습 | 단계별 출력 추적 |
 | 4 | API와 LLM 호출 | 환경변수, request/response, OpenAI API 기본 호출 구조 노트 | 문서 기반 실습, 역공학 |
 | 5 | Prompt와 구조화 출력 | system/user 메시지, JSON output, prompt versioning, 실패 사례 비교 | 능동적 회상, 비교 실습 |
@@ -34,6 +34,7 @@ PyTorch Tensor, Autograd, Training Loop는 중요하지만 이 과정의 직접 
 LLM 활용 과정에서 먼저 필요한 것은 다음이다.
 
 - Python 자료구조
+- indexing/slicing과 nested data 접근
 - 파일과 JSON 처리
 - API 호출과 응답 파싱
 - 문서 chunking
@@ -75,4 +76,5 @@ PyTorch는 1주 사전준비 이후 보충 주제로 다룬다.
 - RAG 실패 사례 모으기
 - AI 없이 작은 기능 구현
 - 기존 코드에 로그를 넣어 데이터 흐름 추적
+- list/dict comprehension, `range`, `enumerate`를 실제 RAG 코드에서 다시 확인
 - PyTorch 기초를 선택 보충

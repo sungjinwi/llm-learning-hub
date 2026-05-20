@@ -7,6 +7,7 @@
 | Day | 주제 | 실습 파일 |
 | --- | --- | --- |
 | 1 | Python core | `day1_python_core_practice.md` |
+| 1 보충 | Indexing, slicing, string, nested data | `day1_supplement_indexing_slicing.md` |
 | 2 | Python practical tools | `day2_python_practical_tools.md` |
 | 3 | Pandas data handling | `day3_pandas_data_handling.md` |
 | 4 | API and LLM calls | `../../llm/exercises/day4_api_response_parsing.md` |
@@ -22,6 +23,17 @@
 - scikit-learn pipeline
 - PyTorch tensor/autograd
 - training loop
+
+## LLM 코드에서 자주 다시 등장하는 Python 기초
+
+아래 항목은 별도 긴 이론보다 Day별 실습에서 반복 확인한다.
+
+- indexing/slicing: 문서 preview, top-k 검색 결과 확인, chunking
+- string/f-string: prompt 조립, 로그 메시지 작성
+- nested list/dict 접근: API 응답, JSON, metadata
+- `dict.get`: optional field와 누락 key 처리
+- list/dict comprehension: 평가 로그와 문서 목록 가공
+- `range`, `enumerate`: chunk 번호, 검색 결과 순위, 반복 디버깅
 
 ## 사용 규칙
 

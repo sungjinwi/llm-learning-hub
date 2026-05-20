@@ -6,6 +6,7 @@
 - 조건문
 - 반복문
 - list, dict, tuple, string
+- indexing and slicing
 - function
 - class의 최소 개념
 
@@ -13,6 +14,7 @@
 
 - `notes/python_core.md`
 - `questions/day1_active_recall.md`
+- `exercises/day1_supplement_indexing_slicing.md`
 
 ## Day 2 - Python Practical Tools
 
@@ -21,6 +23,9 @@
 - `pathlib` 경로 처리
 - 파일 읽기와 쓰기
 - JSON 읽기와 만들기
+- string 조립과 f-string
+- nested list/dict 접근
+- `dict.get`
 - `try/except`
 - `assert` 기초
 
@@ -37,6 +42,7 @@
 - missing values
 - groupby
 - 간단한 데이터 요약
+- list/dict comprehension과 DataFrame 변환 감각
 
 완료 산출물:
 
@@ -93,6 +99,7 @@
 - 답변 생성
 - 로그 저장
 - 간단 평가표 작성
+- `range`, slicing, `enumerate`로 chunk와 검색 결과를 직접 점검
 
 완료 산출물:
 

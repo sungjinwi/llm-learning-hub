@@ -59,9 +59,9 @@ LLM 활용 중심 과정 기준으로는 다음이 부족하다.
 
 | Day | 주제 | 목표 |
 | --- | --- | --- |
-| 1 | Python Core | 변수, 조건문, 반복문, list, dict, function, class 최소 개념 |
-| 2 | Python 실전 도구 | import, venv, pip, pathlib, 파일 입출력, JSON, try/except |
-| 3 | 데이터 다루기 | Pandas 기초, CSV 읽기, 결측치, 필터링, groupby |
+| 1 | Python Core | 변수, 조건문, 반복문, list, dict, indexing/slicing, function, class 최소 개념 |
+| 2 | Python 실전 도구 | import, venv, pip, pathlib, 파일 입출력, JSON, string 처리, nested data, try/except |
+| 3 | 데이터 다루기 | Pandas 기초, CSV 읽기, 결측치, 필터링, groupby, list/dict 로그 변환 |
 | 4 | API와 LLM 호출 | REST API 감각, request/response, OpenAI API 기본 호출, 환경변수 |
 | 5 | Prompt와 구조화 출력 | system/user 메시지, JSON output, prompt versioning, 실패 케이스 비교 |
 | 6 | Embedding과 RAG | chunking, embedding, vector search, retrieval 결과 확인 |
@@ -103,9 +103,27 @@ PyTorch Tensor와 Training Loop는 중요하지만, 이 과정의 직접 선행 
 - JSON 직렬화와 역직렬화
 - `try/except` 예외 처리
 - 함수 scope
+- indexing과 slicing
+- string method와 f-string
+- nested list/dict 접근
+- `dict.get`과 누락 key 처리
+- `range`, `enumerate`, `zip`
 - list/dict comprehension
 - `assert`로 간단 테스트하기
 - 에러 메시지 읽기와 최소 재현 코드 만들기
+
+## 2026-05-20 추가 보강 판단
+
+전체 흐름은 유지하되, 이후 Day에서 자연스럽게 필요해지는 Python 연결 개념을 명시적으로 추가했다.
+
+추가한 이유:
+
+- slicing은 문서 preview, top-k 검색 결과 확인, chunking에서 반복 사용된다.
+- string/f-string은 prompt 조립과 로그 작성의 기본이다.
+- nested list/dict 접근은 API 응답과 JSON 파싱의 핵심이다.
+- `dict.get`과 `try/except`는 누락 field를 다룰 때 필요하다.
+- list/dict comprehension은 평가 로그와 문서 목록을 다룰 때 자주 등장한다.
+- `range`와 `enumerate`는 chunk 번호, 검색 결과 순위, 반복 디버깅에 필요하다.
 
 ## 꼭 추가할 LLM 개념
 

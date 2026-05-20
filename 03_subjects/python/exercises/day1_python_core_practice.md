@@ -7,7 +7,7 @@
 
 ## 목표
 
-변수, 조건문, 반복문, list, dict, function을 직접 코드로 다룬다.
+변수, 조건문, 반복문, list, dict, indexing, slicing, function을 직접 코드로 다룬다.
 
 ## 실습 1 - 출력 예측
 
@@ -53,4 +53,30 @@ def get_passed_students(scores):
 
 scores = {"kim": 80, "lee": 95, "park": 91}
 print(get_passed_students(scores))
+```
+
+## 실습 4 - indexing과 slicing 출력 예측
+
+LLM/RAG 코드에서는 전체 문서나 검색 결과를 한 번에 출력하지 않고 앞부분만 확인하는 일이 많다.
+
+```python
+chunks = [
+    "배송은 2-3일 걸립니다.",
+    "환불은 7일 이내 가능합니다.",
+    "교환은 고객센터에 문의하세요.",
+    "도서 산간 지역은 배송이 지연될 수 있습니다.",
+]
+
+print(chunks[0])
+print(chunks[:2])
+print(chunks[-1])
+```
+
+답변 형식:
+
+```md
+1. 첫 번째 출력:
+2. 두 번째 출력:
+3. 세 번째 출력:
+4. `chunks[:2]`에서 끝 인덱스 2가 포함되는가?
 ```

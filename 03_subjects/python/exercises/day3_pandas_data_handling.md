@@ -15,6 +15,7 @@ LLM 프로젝트에서 자주 만나는 CSV, 로그, 평가표 데이터를 Pand
 - 결측치 확인
 - groupby
 - 간단한 평가표 만들기
+- list/dict comprehension으로 평가 데이터를 만들고 DataFrame으로 바꾸기
 
 ## 실습 1 - DataFrame 필터링
 
@@ -37,7 +38,31 @@ print(refund_df)
 2. `refund_df`에는 몇 개의 행이 남는가?
 3. RAG 평가 로그에서 이런 필터링이 왜 필요한가?
 
-## 실습 2 - 결측치 확인
+## 실습 2 - list/dict에서 DataFrame 만들기
+
+```python
+import pandas as pd
+
+logs = [
+    {"question": "배송", "category": "delivery", "correct": True},
+    {"question": "환불", "category": "refund", "correct": False},
+    {"question": "교환", "category": "refund", "correct": True},
+]
+
+questions = [item["question"] for item in logs]
+df = pd.DataFrame(logs)
+
+print(questions)
+print(df)
+```
+
+질문:
+
+1. `questions`의 출력은 무엇인가?
+2. `logs`는 어떤 자료구조인가?
+3. LLM 평가 로그를 list of dict로 저장하면 Pandas로 바꾸기 쉬운 이유는 무엇인가?
+
+## 실습 3 - 결측치 확인
 
 ```python
 import pandas as pd
@@ -58,7 +83,7 @@ print(df.isna().sum())
 2. 결측치가 있는 평가 데이터가 RAG 품질 판단에 어떤 문제를 만들 수 있는가?
 3. 결측치를 삭제할지 채울지 결정할 때 무엇을 봐야 하는가?
 
-## 실습 3 - groupby로 평가 요약
+## 실습 4 - groupby로 평가 요약
 
 ```python
 import pandas as pd
@@ -81,5 +106,7 @@ print(summary)
 ## 완료 기준
 
 - DataFrame 필터링 과정을 boolean mask로 설명할 수 있다.
+- list of dict를 DataFrame으로 바꾸는 흐름을 설명할 수 있다.
+- list comprehension이 반복문을 짧게 표현한다는 점을 설명할 수 있다.
 - 결측치가 평가에 미치는 영향을 설명할 수 있다.
 - groupby 결과를 서비스 품질 분석과 연결할 수 있다.
