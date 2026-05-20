@@ -8,6 +8,9 @@
 
 | 날짜 | 주제 | 복습 방식 | 상태 |
 | --- | --- | --- | --- |
+| 2026-05-21 | Python dict key/value and order | resolved concept recall 1문제 | pending |
+| 2026-05-21 | Python parameter vs argument | resolved concept recall 1문제 | pending |
+| 2026-05-21 | Python list, dict, class summary | weak point retry 1문제 | pending |
 | TBD | Python core | active recall 5문제 | pending |
 
 ## 규칙

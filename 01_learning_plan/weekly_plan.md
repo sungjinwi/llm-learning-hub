@@ -4,7 +4,7 @@
 
 | 날짜 | Day | 목표 | 상태 |
 | --- | --- | --- | --- |
-| TBD | 1 | Python 기본 문법과 자료구조 | not_started |
+| 2026-05-20 | 1 | Python 기본 문법과 자료구조 | completed |
 | TBD | 2 | NumPy와 Pandas | not_started |
 | TBD | 3 | EDA와 전처리 | not_started |
 | TBD | 4 | Scikit-Learn 머신러닝 | not_started |
