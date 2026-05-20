@@ -17,6 +17,7 @@
 | `06_tracking/review_schedule.md` | 복습 일정 | 다음에 언제 무엇을 다시 물을지 기록 |
 | `06_tracking/progress_dashboard.md` | 전체 진도판 | 영역별 상태와 증거 파일 기록 |
 | `05_outputs/summaries/` | NotebookLM/슬라이드용 요약 | 하루 학습을 문서화 가능한 형태로 정리 |
+| `05_outputs/documentation_guide.md` | 문서화 가이드 | NotebookLM, 슬라이드, 블로그, 포트폴리오 변환 기준 |
 | `05_outputs/projects/` | 프로젝트 회고 | 프로젝트 목표, 구현, 실패, 평가 결과 정리 |
 | `03_subjects/*/notes/` | 개념 노트 | 개념을 나중에 다시 읽을 수 있게 정리 |
 | `03_subjects/*/exercises/` | 실습 문제 | 정답 숨김, 출력 예측, 빈칸, 평가 문제 |
