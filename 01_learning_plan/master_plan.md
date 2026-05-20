@@ -102,3 +102,16 @@ PyTorch는 1주 사전준비 이후 보충 주제로 다룬다.
 - 기존 코드에 로그를 넣어 데이터 흐름 추적
 - list/dict comprehension, `range`, `enumerate`를 실제 RAG 코드에서 다시 확인
 - PyTorch 기초를 선택 보충
+
+## Interaction Engineering 연결
+
+Prompt, context, harness, eval, guardrail이 깊게 필요한 시점에는 `D:\llm-interaction-engineering`으로 연결한다.
+
+상세 전환 기준과 기록 방식은 `01_learning_plan/cross_repo_learning_flow.md`를 따른다.
+
+원칙:
+
+- 메인 학습은 이 repo에서 시작한다.
+- 전문 실습은 interaction engineering repo에서 수행한다.
+- 실습 결과의 상세 기록은 interaction repo에 남긴다.
+- 메인 repo에는 왜 연결했는지, 어떤 판단 기준이 생겼는지, 다음 복습이 무엇인지 요약한다.

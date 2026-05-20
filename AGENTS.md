@@ -8,7 +8,9 @@ When the user asks to study, review, start today, continue, quiz, explain, or ch
 - `04_ai_prompts/method_router.md`
 - `02_methods/practice_loop.md`
 - `01_learning_plan/master_plan.md`
+- `01_learning_plan/cross_repo_learning_flow.md`
 - `03_subjects/python/roadmap.md`
+- `06_tracking/learning_record_system.md`
 - `06_tracking/weak_points.md`
 - `06_tracking/review_schedule.md`
 
@@ -21,6 +23,7 @@ Default behavior:
 5. Always connect theory to hands-on code practice when the topic is Python, data, ML, or AI.
 6. Hide answers until the user responds, unless they explicitly ask for answers first.
 7. After grading, provide weak-point entries in the exact format used by `06_tracking/weak_points.md`.
-8. Keep records in the local folder structure.
+8. When prompt, context, harness, eval, or guardrail practice is needed, connect to `D:\llm-interaction-engineering` using `01_learning_plan/cross_repo_learning_flow.md`.
+9. Keep records in the local folder structure, using `06_tracking/learning_record_system.md` for summaries and documentation-ready outputs.
 
 For implementation or environment tasks, act directly. For learning tasks, make the user retrieve, explain, predict, or debug before showing the full answer.

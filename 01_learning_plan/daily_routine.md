@@ -71,3 +71,22 @@ AI는 답변 후 다음 형식으로 채점한다.
 - 다음 복습 날짜
 
 공식 문서를 참고한 날에는 참고한 문서와 확인한 항목도 함께 남긴다.
+
+## 7. 문서화용 기록
+
+하루 학습이 끝나면 `06_tracking/learning_record_system.md`의 형식에 맞춰 summary 파일을 만들 수 있는지 확인한다.
+
+권장 위치:
+
+```text
+05_outputs/summaries/YYYY-MM-DD_<topic>_summary.md
+```
+
+`D:\llm-interaction-engineering`에서 연결 실습을 수행한 날에는 아래 내용도 함께 남긴다.
+
+- 연결 repo
+- 연결 파일
+- 연결 이유
+- 수행한 실습
+- 메인 학습에 추가된 판단 기준
+- 다음 복습

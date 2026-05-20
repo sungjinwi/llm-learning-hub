@@ -14,6 +14,8 @@
 | LLM Theory Lite - RAG | not_started | `03_subjects/llm/exercises/day6_llm_theory_lite_embedding_rag.md` |
 | Mini LLM project | not_started |  |
 | LLM Theory Lite - Eval/Agent | not_started | `03_subjects/llm/exercises/day7_llm_theory_lite_eval_agent.md` |
+| Cross-repo flow | ready | `01_learning_plan/cross_repo_learning_flow.md` |
+| Documentation-ready records | ready | `06_tracking/learning_record_system.md` |
 
 ## 현재 우선순위
 
