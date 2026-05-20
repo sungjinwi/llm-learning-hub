@@ -10,7 +10,7 @@
 
 1. `06_tracking/weak_points.md` 확인
 2. `06_tracking/review_schedule.md` 확인
-3. 오늘 Day 선택
+3. `01_learning_plan/master_plan.md`, `01_learning_plan/weekly_plan.md`, `03_subjects/python/roadmap.md`, `03_subjects/llm/roadmap.md`에서 오늘 Day 선택
 4. 사전 진단 질문 3개 이하
 5. 답변 대기
 6. 학습 진행
@@ -62,10 +62,21 @@
 수행:
 
 1. 문서 기반 실습 모드 선택
-2. 핵심 API 1개만 고르기
-3. 최소 예제 제시
-4. 파라미터 하나를 바꾸는 실습 진행
-5. 사용자가 결과 차이를 설명하게 하기
+2. `04_ai_prompts/official_docs_policy.md` 확인
+3. 공식 문서에서 핵심 API 1개만 고르기
+4. 최소 예제 제시
+5. 파라미터 하나를 바꾸는 실습 진행
+6. 사용자가 결과 차이를 설명하게 하기
+
+## LLM 과정 준비
+
+수행:
+
+1. `01_learning_plan/llm_course_readiness_review.md` 확인
+2. `03_subjects/llm/roadmap.md` 확인
+3. API, prompt, RAG, 평가 중 현재 필요한 주제 선택
+4. 공식 문서 확인 필요 여부 판단
+5. 작은 JSON/API/RAG 실습으로 연결
 
 ## 만들어보자
 

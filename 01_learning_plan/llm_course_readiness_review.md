@@ -69,6 +69,30 @@ LLM 활용 중심 과정 기준으로는 다음이 부족하다.
 
 PyTorch Tensor와 Training Loop는 중요하지만, 이 과정의 직접 선행 지식으로는 우선순위가 낮다. 교육과정 중 모델 내부 원리를 설명할 때 보조 지식으로 다루는 편이 낫다.
 
+## 2026-05-20 반영 상태
+
+위 권장 순서는 다음 파일에 반영되었다.
+
+- `01_learning_plan/master_plan.md`
+- `01_learning_plan/weekly_plan.md`
+- `03_subjects/python/roadmap.md`
+- `03_subjects/llm/roadmap.md`
+- `06_tracking/progress_dashboard.md`
+- `03_subjects/python/exercises/practice_index.md`
+- `03_subjects/python/exercises/day2_python_practical_tools.md`
+- `03_subjects/python/exercises/day3_pandas_data_handling.md`
+- `03_subjects/llm/exercises/day4_api_response_parsing.md`
+- `03_subjects/llm/exercises/day5_prompt_eval_practice.md`
+- `03_subjects/llm/exercises/day6_rag_retrieval_practice.md`
+- `03_subjects/llm/projects/faq_qa_mini_project.md`
+
+정확도가 중요한 파트에서 공식 문서를 우선 확인하는 규칙은 다음 파일에 반영되었다.
+
+- `AI_STUDY_OPERATING_RULES.md`
+- `04_ai_prompts/method_router.md`
+- `04_ai_prompts/official_docs_policy.md`
+- `01_learning_plan/daily_routine.md`
+
 ## 꼭 추가할 Python 개념
 
 - `import`와 모듈 구조

@@ -24,4 +24,7 @@
 - Day 1 파인만식 요약 결과: function, parameter/argument는 정확. list/dict/class 설명은 표현 보정 필요.
 - Day 1 보정 완료: list는 순서와 인덱스, dict는 key-value와 key 접근, class는 객체 설계도로 정확히 재설명함.
 - NotebookLM/슬라이드용 요약 생성: `05_outputs/summaries/2026-05-20_day1_python_core_slide_notes.md`
+- 커리큘럼 개편: 모두의연구소 LLM 서비스 개발 과정에 맞춰 Week 1을 Python/Pandas/PyTorch 중심에서 Python 실전 도구, API, prompt, embedding, RAG, 미니 LLM 프로젝트 중심으로 재구성함.
+- 신뢰성 규칙 추가: API, 라이브러리, 보안, 평가 지표, 최신 모델처럼 정확도가 중요한 주제는 공식 문서를 우선 확인하도록 운영 규칙과 라우터에 반영함.
+- 세부 실습 재점검: 기존 Day 2~7의 NumPy/sklearn/PyTorch 중심 실습 파일을 제거하고, Python 실전 도구, Pandas 평가 데이터, API 응답 파싱, prompt 평가, RAG retrieval 점검, FAQ QA 미니 프로젝트 실습으로 교체함.
 - 다음 행동: Day 2 시작 전 Day 1 복습 3문제

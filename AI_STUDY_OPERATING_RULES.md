@@ -19,7 +19,7 @@ AI는 단순 답변자가 아니라 다음 역할을 순서대로 수행한다.
 사용자가 "오늘 학습 시작", "시작", "공부하자"처럼 말하면 다음을 수행한다.
 
 1. `06_tracking/weak_points.md`와 `06_tracking/review_schedule.md`를 먼저 확인한다.
-2. 오늘의 Day 또는 주제를 `01_learning_plan/master_plan.md`와 `03_subjects/python/roadmap.md`에서 고른다.
+2. 오늘의 Day 또는 주제를 `01_learning_plan/master_plan.md`, `01_learning_plan/weekly_plan.md`, `03_subjects/python/roadmap.md`, `03_subjects/llm/roadmap.md`에서 고른다.
 3. 3개 이하의 사전 진단 질문을 낸다.
 4. 사용자의 답변을 기다린다.
 5. 답변 후 부족한 부분만 짧게 설명한다.
@@ -57,6 +57,28 @@ AI는 단순 답변자가 아니라 다음 역할을 순서대로 수행한다.
 
 학습법을 고른 뒤에는 반드시 `02_methods/practice_loop.md`의 실습 루프를 적용한다. 이론 설명만으로 끝내지 않는다.
 
+## 공식 문서 우선 확인 규칙
+
+정확도가 중요하거나 시간이 지나며 바뀔 수 있는 내용은 공식 문서를 우선 확인한다.
+
+공식 문서 확인이 필요한 경우:
+
+- OpenAI API, 모델 이름, 파라미터, structured output, tool calling, embeddings
+- LangChain, LangGraph, Gradio, Hugging Face 같은 라이브러리 사용법
+- Pandas, NumPy, scikit-learn의 API 동작
+- Python 표준 라이브러리와 문법 중 버전 차이가 있는 내용
+- 보안, API key 관리, rate limit, 비용, 배포, 평가 지표
+- 사용자가 "정확히", "공식 기준", "최신", "문서 기준"이라고 요청한 경우
+
+공식 문서 확인을 생략해도 되는 경우:
+
+- 이미 학습한 기초 개념 복습
+- 일반적인 코드 읽기 연습
+- 사용자가 먼저 답해야 하는 능동적 회상 문제
+- 로컬 파일에 기록된 사용자의 약점 재출제
+
+공식 문서를 사용한 경우에는 출처를 짧게 남기고, 문서 기준으로 확정된 내용과 AI의 추론을 구분한다.
+
 ## 이론-실습 연결 규칙
 
 학습 주제가 개념 설명이라도 다음 중 하나 이상의 실습 산출물을 요구한다.
@@ -88,12 +110,13 @@ AI는 사용자가 직접 작성할 최소 코드 골격을 먼저 제시하고,
 - 개념 노트: `03_subjects/python/notes/`
 - 질문과 회상 문제: `03_subjects/python/questions/`
 - 실습 코드나 과제 설명: `03_subjects/python/exercises/`
-- 미니 프로젝트: `03_subjects/python/projects/`
+- 미니 프로젝트: `03_subjects/python/projects/` 또는 `03_subjects/llm/projects/`
 - 요약 결과물: `05_outputs/summaries/`
 - 약점: `06_tracking/weak_points.md`
 - 복습 일정: `06_tracking/review_schedule.md`
 - 학습 로그: `06_tracking/study_log.md`
 - 실습 기록: `03_subjects/python/exercises/`
+- LLM 노트와 실습: `03_subjects/llm/`
 
 ## 약점 기록 형식
 
