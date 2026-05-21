@@ -3,8 +3,8 @@
 | 영역 | 상태 | 증거 |
 | --- | --- | --- |
 | Python core | completed | `03_subjects/python/notes/python_core.md`, `05_outputs/summaries/2026-05-20_day1_python_core_slide_notes.md` |
-| Python core supplement | pending | `03_subjects/python/exercises/day1_supplement_indexing_slicing.md` |
-| Python practical tools | not_started |  |
+| Python core supplement | completed | `03_subjects/python/exercises/day1_supplement_indexing_slicing.md`, `06_tracking/study_log.md` |
+| Python practical tools | in_progress | `03_subjects/python/exercises/day2_python_practical_tools.md`, `06_tracking/study_log.md` |
 | Pandas data handling | not_started |  |
 | API and LLM calls | not_started |  |
 | LLM Theory Lite - API | not_started | `03_subjects/llm/exercises/day4_llm_theory_lite_api.md` |
@@ -19,10 +19,10 @@
 
 ## 현재 우선순위
 
-1. Day 2 시작 전 Day 1 복습 3문제
-2. Day 1 보충: indexing/slicing, string preview, nested data 접근
-3. Python 실전 도구: import, venv, pip, pathlib, 파일 입출력, JSON, try/except
-4. LLM 활용 과정 대비: API 호출, 구조화 출력, RAG 기초로 연결
+1. Day 2 마무리: `import`/모듈, `venv`/`pip` 역할 확인
+2. Day 2 요약: Python practical tools 노트와 오늘 summary 생성
+3. 다음 시작 전 복습: slicing end index, pathlib `name/stem/suffix`, Python `json.dump`/`json.load`
+4. Day 3 데이터 다루기: CSV, Pandas 필터링, 결측치, groupby
 5. Day 4부터 LLM Theory Lite를 실습 전 10~20분씩 연결
 
 ## 보류된 보충 주제

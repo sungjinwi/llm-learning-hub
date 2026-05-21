@@ -118,6 +118,9 @@ AI는 사용자가 직접 작성할 최소 코드 골격을 먼저 제시하고,
 3. 사용자가 오답을 냈을 때는 먼저 출제문 누락이나 모호함이 없었는지 확인한 뒤 약점으로 기록한다.
 4. 출제 오류가 확인되면 사용자의 약점 기록과 복습 일정을 남기지 않거나, 이미 기록했다면 삭제한다.
 5. 여러 문제를 낼 때는 사용자가 답변을 붙이기 쉽도록 각 문제에 명확한 번호를 붙이고, 가능하면 `1.`, `2.`, `3.` 형태의 답변 템플릿을 함께 제공한다.
+6. 문제 유형을 정확히 말한다. 자유 구현, 빈칸 구현, 출력 예측, 개념 설명, 오류 찾기, 역공학을 구분해서 안내한다.
+7. 빈칸 구현을 "직접 코드 작성"이나 "자유 구현"처럼 표현하지 않는다. 사용자가 전체 구조를 설계해야 할 때만 "직접 구현"이라고 말한다.
+8. 문제 안내 문구와 실제 요구사항이 다르면 사용자의 지적을 우선 인정하고, 수정된 문제 유형과 요구사항을 다시 제시한다.
 
 ## 기록 규칙
 
@@ -134,6 +137,47 @@ AI는 사용자가 직접 작성할 최소 코드 골격을 먼저 제시하고,
 - 실습 기록: `03_subjects/python/exercises/`
 - LLM 노트와 실습: `03_subjects/llm/`
 - Prompt 품질 패턴: `04_ai_prompts/prompt_quality_patterns.md`
+
+## 작업별 보조 규칙 확인
+
+사용자의 요청이 특정 작업 유형에 해당하면, 실행 전에 관련 보조 규칙 파일을 확인한다.
+
+- 짧은 학습 시작/복습/문제 요청: `04_ai_prompts/default_study_modes.md`
+- 질문 유형과 학습법 선택: `04_ai_prompts/method_router.md`
+- 공식 문서가 필요한 API, 라이브러리, 평가 지표: `04_ai_prompts/official_docs_policy.md`
+- prompt 개선 또는 구조화: `04_ai_prompts/prompt_quality_patterns.md`
+- git commit 작성: `04_ai_prompts/commit_message_guidelines.md`
+- interaction engineering repo 전환: `01_learning_plan/cross_repo_learning_flow.md`
+- 하루 요약, NotebookLM/슬라이드용 산출물: `06_tracking/learning_record_system.md`
+
+특히 git commit을 만들기 전에는 반드시 `04_ai_prompts/commit_message_guidelines.md`를 읽고, 한글 헤더와 2~4개 bullet body 형식을 따른다. 이미 push된 커밋 메시지를 고치는 작업은 history rewrite와 force push가 필요하므로 사용자 확인을 우선한다. 사용자가 명시적으로 force push를 요청한 경우에는 `--force-with-lease`를 사용한다.
+
+## 중간 질문 기록 판단 규칙
+
+사용자가 문제 풀이 중간에 질문하면 AI는 답변 후 연관도와 중요도를 판단해 기록 여부를 결정한다.
+
+기록한다:
+
+- 현재 Day 또는 다음 Day의 핵심 개념으로 이어지는 질문
+- API, JSON, prompt, RAG, 평가, 보안처럼 이후 실습에서 반복 사용될 개념 질문
+- 사용자의 오개념이나 헷갈림이 드러난 질문
+- 학습 경로, 우선순위, repo 전환 판단에 영향을 주는 질문
+
+기록하지 않는다:
+
+- 단순 표현 확인, 오타 확인, 일회성 짧은 확인
+- 이미 같은 날 기록된 내용의 반복 질문
+- 학습 목표와 직접 관련이 낮은 잡담성 질문
+
+기록 위치:
+
+- 흐름상 중요한 질문 요약: `06_tracking/study_log.md`
+- 재사용 가능한 개념 설명: 해당 subject의 `notes/`
+- 오개념이나 재출제가 필요한 내용: `06_tracking/weak_points.md`
+- 복습이 필요한 질문: `06_tracking/review_schedule.md`
+- 하루 요약에 들어갈 핵심 질문: `05_outputs/summaries/`
+
+기록할 때는 질문 전문을 길게 복사하지 말고, "사용자가 무엇을 물었고 어떤 판단 기준이 생겼는지"를 1~2줄로 요약한다.
 
 ## 약점 기록 형식
 

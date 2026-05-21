@@ -5,8 +5,8 @@
 | 날짜 | Day | 목표 | 상태 |
 | --- | --- | --- | --- |
 | 2026-05-20 | 1 | Python Core: 변수, 조건문, 반복문, list, dict, function, class | completed |
-| TBD | 1 보충 | LLM 코드에서 자주 쓰는 indexing/slicing, string 기초, nested data 접근 | pending |
-| TBD | 2 | Python 실전 도구: import, venv, pip, pathlib, 파일 입출력, JSON, string 처리, try/except | not_started |
+| 2026-05-21 | 1 보충 | LLM 코드에서 자주 쓰는 indexing/slicing, string 기초, nested data 접근 | completed |
+| 2026-05-21 | 2 | Python 실전 도구: import, venv, pip, pathlib, 파일 입출력, JSON, string 처리, try/except | in_progress |
 | TBD | 3 | 데이터 다루기: CSV, Pandas 필터링, 결측치, groupby | not_started |
 | TBD | 4 | API와 LLM 호출: 환경변수, request/response, OpenAI API 기본 구조, token/context window | not_started |
 | TBD | 5 | Prompt와 구조화 출력: system/user 메시지, JSON output, prompt versioning, temperature/hallucination | not_started |
