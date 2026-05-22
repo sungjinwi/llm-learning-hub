@@ -1,4 +1,4 @@
-﻿# AI Study Operating Rules
+# AI Study Operating Rules
 
 이 파일은 이 폴더에서 학습을 진행할 때 AI가 기본으로 따라야 하는 운영 규칙이다.
 

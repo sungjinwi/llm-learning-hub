@@ -1,4 +1,4 @@
-﻿# Active Recall
+# Active Recall
 
 ## 목적
 

@@ -1,4 +1,4 @@
-﻿# Local Learning Instructions
+# Local Learning Instructions
 
 This workspace is a local AI-assisted learning system.
 

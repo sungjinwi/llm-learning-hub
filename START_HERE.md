@@ -1,4 +1,4 @@
-﻿# Learning System Start
+# Learning System Start
 
 이 폴더는 Gemini 보고서의 학습법을 실제 운영 가능한 로컬 학습 시스템으로 바꾼 것이다.
 

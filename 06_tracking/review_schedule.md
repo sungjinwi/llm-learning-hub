@@ -1,4 +1,4 @@
-﻿# Review Schedule
+# Review Schedule
 
 ## Due
 

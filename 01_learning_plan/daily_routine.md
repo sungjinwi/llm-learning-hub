@@ -1,4 +1,4 @@
-﻿# Daily Routine
+# Daily Routine
 
 ## 0. 시작
 

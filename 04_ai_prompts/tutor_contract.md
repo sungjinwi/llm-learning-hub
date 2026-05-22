@@ -1,4 +1,4 @@
-﻿# Tutor Contract
+# Tutor Contract
 
 아래 계약은 학습 대화의 기본값이다.
 

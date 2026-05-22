@@ -1,4 +1,4 @@
-﻿# Default Study Modes
+# Default Study Modes
 
 이 파일은 사용자의 짧은 말을 어떤 학습 모드로 해석할지 정한다.
 

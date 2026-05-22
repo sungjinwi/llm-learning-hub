@@ -1,4 +1,4 @@
-﻿# Session Starters
+# Session Starters
 
 사용자는 아래처럼 짧게 말하면 된다.
 

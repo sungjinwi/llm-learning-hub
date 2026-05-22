@@ -1,4 +1,4 @@
-﻿# Weak Points
+# Weak Points
 
 약점은 숨길 것이 아니라 다음 학습을 자동으로 정하는 입력값이다.
 

@@ -1,4 +1,4 @@
-﻿# Socratic Tutoring
+# Socratic Tutoring
 
 ## 목적
 

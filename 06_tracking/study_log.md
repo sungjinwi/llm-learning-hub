@@ -1,4 +1,4 @@
-﻿# Study Log
+# Study Log
 
 ## 2026-05-19
 

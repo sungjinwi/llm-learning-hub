@@ -1,4 +1,4 @@
-﻿# Documentation Practice
+# Documentation Practice
 
 ## 목적
 

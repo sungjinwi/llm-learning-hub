@@ -1,4 +1,4 @@
-﻿# Python Core Notes
+# Python Core Notes
 
 ## 상태
 

@@ -1,4 +1,4 @@
-﻿# Day 1 Python Core Practice
+# Day 1 Python Core Practice
 
 ## 적용 학습법
 
